@@ -8,15 +8,15 @@ using namespace std;
 typedef long long ll;
 #define int ll
 
-// Total no of combination in n * n is (n * n) C 2
+// Total no of combination in n * n is (n * n) C 2 -> let N = n * n -> Total Combination -> N*(N-1)/2
 // When a knight attact it create two boards of 2*3 and 3*2
 // In  n*n chess we have to find total no of 2*3 and 3*2 boards
 // In 3 * 3 there are 4 2*3 and 3*2 boards
 // In n * n, there are (n - 1)(n - 2) + (n - 1)(n - 2)
 // which is 2(n - 2)(n - 1)
-// knights can also swap therefor 2 * 2 * (n - 1) * (n - 2);
+// knights can also swap therefore 2 * 2 * (n - 1) * (n - 2);
 
-// ans id (N*N)C2 - 4(N-1)(N-2);
+// ans is (N*N)C2 - 4(N-1)(N-2);
 
 signed main()
 {
